@@ -10,6 +10,8 @@
     {% for tweet in results %}
         <li>
             <strong>{{ tweet.user.username }}</strong>: {{ tweet.text }}
+            <br>
+            <small>Posted on: {{ tweet.created_at }}</small>
         </li>
     {% endfor %}
     </ul>
